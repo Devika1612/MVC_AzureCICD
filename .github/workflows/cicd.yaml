@@ -23,7 +23,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish --configuration Release --output ./publish --no-builds        
+        run: dotnet publish --configuration Release --output ./publish
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:

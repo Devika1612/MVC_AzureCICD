@@ -24,7 +24,7 @@ jobs:
         
       - name: Publish
         run: dotnet publish --configuration Release --output ./publish --no-buildis        
-      - name: Deploy to Azure  Web App
+      - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
